@@ -6820,10 +6820,10 @@ error_t Player::GetAccountInterface(account::Account* account) {
 }
 
 int32_t Player::getBaseAttack(uint32_t level) const {
-  double square = std::sqrt(2.0 * level - 1 + 2025);
-  double stepFormula = std::floor((square + 5) / 10);
-  double frac = ((level + 1000.0) / stepFormula) - (50 * stepFormula);
-  double baseForm = frac + (100 * stepFormula) - 450;
+	double square = std::sqrt(2.0 * level - 1 + 2025);
+	double stepFormula = std::floor((square + 5) / 10);
+	double frac = ((level + 1000.0) / stepFormula) - (50 * stepFormula);
+	double baseForm = frac + (100 * stepFormula) - 450;
 
-  return static_cast<int32_t>(std::floor(baseForm));
+	return static_cast<int32_t>(std::floor(baseForm));
 }
