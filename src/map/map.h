@@ -56,14 +56,14 @@ class AStarNodes {
 		static int_fast32_t getTileWalkCost(const Creature &creature, const Tile* tile);
 
 	private:
-		#if defined(__SSE2__)
+#if defined(__SSE2__)
 		alignas(16) uint32_t nodesTable[MAX_NODES];
 		alignas(64) int32_t calculatedNodes[MAX_NODES];
 		AStarNode nodes[MAX_NODES];
-		#else
+#else
 		AStarNode nodes[MAX_NODES];
 		uint32_t nodesTable[MAX_NODES];
-		#endif
+#endif
 		size_t curNode;
 		int_fast32_t closedNodes;
 		bool openNodes[MAX_NODES];
