@@ -33,7 +33,7 @@
 	<npc centerx="1003" centery="1019" centerz="7" radius="1">
 		<npc name="Hanna" x="0" y="0" z="7" spawntime="60" />
 	</npc>
-	<npc centerx="998" centery="1024" centerz="7" radius="1">
+	<npc centerx="1075" centery="1019" centerz="7" radius="1">
 		<npc name="Imbuement Assistant" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="990" centery="1027" centerz="7" radius="1">
@@ -48,10 +48,10 @@
 	<npc centerx="32354" centery="32226" centerz="7" radius="1">
 		<npc name="Cassino" x="0" y="0" z="7" spawntime="60" />
 	</npc>
-	<npc centerx="985" centery="991" centerz="6" radius="1">
+	<npc centerx="1071" centery="1028" centerz="7" radius="1">
 		<npc name="Battlemart" x="0" y="0" z="7" spawntime="60" />
 	</npc>
-	<npc centerx="983" centery="951" centerz="6" radius="1">
+	<npc centerx="1062" centery="1027" centerz="7" radius="1">
 		<npc name="The Lootmonger" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 </npcs>
