@@ -87,14 +87,14 @@ monster.loot = {
 	{ id = 3031, chance = 100000, maxCount = 100 }, -- gold coin
 	{ id = 3035, chance = 40000, maxCount = 1 }, -- platinum coin
 	{ id = 3049, chance = 1200 }, -- stealth ring
-	{ id = 3079, chance = 500 }, -- boots of haste
+	{ id = 3079, chance = 600 }, -- boots of haste
 	{ id = 7368, chance = 7600, maxCount = 10 }, -- assassin star
-	{ id = 7387, chance = 800 }, -- diamond sceptre
-	{ id = 7407, chance = 1600 }, -- haunted blade
-	{ id = 7451, chance = 1000 }, -- shadow sceptre
-	{ id = 7454, chance = 1000 }, -- glorious axe
-	{ id = 812, chance = 960 }, -- terra legs
-	{ id = 813, chance = 480 }, -- terra boots
+	{ id = 7387, chance = 1000 }, -- diamond sceptre
+	{ id = 7407, chance = 1900 }, -- haunted blade
+	{ id = 7451, chance = 1200 }, -- shadow sceptre
+	{ id = 7454, chance = 2000 }, -- glorious axe
+	{ id = 812, chance = 1260 }, -- terra legs
+	{ id = 813, chance = 680 }, -- terra boots
 	{ id = 20200, chance = 4000 }, -- silencer claws
 	{ name = "fairy wings", chance = 12000 },
 }

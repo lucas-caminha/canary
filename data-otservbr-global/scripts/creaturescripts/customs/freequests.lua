@@ -328,7 +328,7 @@ local questTable = {
 	{ storageName = "DjinnWar.MaridFaction.DoorToLamp", storage = Storage.Quest.U7_4.DjinnWar.MaridFaction.DoorToLamp, storageValue = 1 },
 	{ storageName = "DjinnWar.MaridFaction.DoorToEfreetTerritory", storage = Storage.Quest.U7_4.DjinnWar.MaridFaction.DoorToEfreetTerritory, storageValue = 1 },
 	{ storageName = "GraveDanger.QuestLine", storage = Storage.Quest.U12_20.GraveDanger.QuestLine, storageValue = 14 },
-	{ storageName = "GraveDanger.Bosses.KingZelosDoor", storage = Storage.Quest.U12_20.GraveDanger.Bosses.KingZelosDoor, storageValue = 1 },
+	{ storageName = "GraveDanger.Bosses.KingZelos.Room", storage = Storage.Quest.U12_20.GraveDanger.Bosses.KingZelos.Room, storageValue = 1 },
 	{ storageName = "CradleOfMonsters.Access.Ingol", storage = Storage.Quest.U13_10.CradleOfMonsters.Access.Ingol, storageValue = 1 },
 	{ storageName = "CradleOfMonsters.Access.LowerIngol", storage = Storage.Quest.U13_10.CradleOfMonsters.Access.LowerIngol, storageValue = 1 },
 	{ storageName = "CradleOfMonsters.Access.Monster", storage = Storage.Quest.U13_10.CradleOfMonsters.Access.Monster, storageValue = 1 },
@@ -354,6 +354,11 @@ local questTable = {
 	{ storageName = "TheWhiteRavenMonastery.Passage", storage = Storage.Quest.U7_24.TheWhiteRavenMonastery.Passage, storageValue = 1 },
 	{ storageName = "TheWhiteRavenMonastery.Diary", storage = Storage.Quest.U7_24.TheWhiteRavenMonastery.Diary, storageValue = 2 },
 	{ storageName = "TheWhiteRavenMonastery.Door", storage = Storage.Quest.U7_24.TheWhiteRavenMonastery.Door, storageValue = 1 },
+	{ storageName = "TheSecretLibrary.FalconBastion.KillingBosses", storage = Storage.Quest.U11_80.TheSecretLibrary.FalconBastion.KillingBosses, storageValue = 5 },
+	{ storageName = "TheDreamCourts.HauntedHouse.Questline", storage = Storage.Quest.U12_00.TheDreamCourts.HauntedHouse.Questline, storageValue = 4 },
+	{ storageName = "TheDreamCourts.BurriedCatedral.WordCount", storage = Storage.Quest.U12_00.TheDreamCourts.HauntedHouse.Questline, storageValue = 4 },
+	{ storageName = "TheDreamCourts.HauntedHouse.Cellar", storage = Storage.Quest.U12_00.TheDreamCourts.HauntedHouse.Cellar, storageValue = 1 },
+	{ storageName = "TheDreamCourts.UnsafeRelease.Questline", storage = Storage.Quest.U12_00.TheDreamCourts.UnsafeRelease.Questline, storageValue = 1 },
 }
 
 -- from Position: (33201, 31762, 1)

@@ -24,20 +24,26 @@
 	<npc centerx="998" centery="1037" centerz="6" radius="1">
 		<npc name="Rashid of Island" x="0" y="-1" z="6" spawntime="60" />
 	</npc>
-	<npc centerx="1059" centery="1018" centerz="7" radius="3">
-		<npc name="Zuma Magehide" x="-1" y="1" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="1066" centery="1018" centerz="7" radius="3">
-		<npc name="Runtel Blackspark" x="0" y="3" z="7" spawntime="60" />
-	</npc>
 	<npc centerx="1003" centery="1019" centerz="7" radius="1">
 		<npc name="Hanna" x="0" y="0" z="7" spawntime="60" />
 	</npc>
-	<npc centerx="1075" centery="1019" centerz="7" radius="1">
+	<npc centerx="1058" centery="1019" centerz="7" radius="3">
+		<npc name="Zuma Magehide" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1066" centery="1019" centerz="7" radius="3">
+		<npc name="Runtel Blackspark" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1070" centery="1024" centerz="7" radius="1">
 		<npc name="Imbuement Assistant" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="990" centery="1027" centerz="7" radius="1">
 		<npc name="Archery" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1060" centery="1027" centerz="7" radius="1">
+		<npc name="The Lootmonger" x="0" y="0" z="7" spawntime="60" />
+	</npc>
+	<npc centerx="1066" centery="1028" centerz="7" radius="1">
+		<npc name="Battlemart" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 	<npc centerx="994" centery="1034" centerz="7" radius="1">
 		<npc name="Rock In A Hard Place" x="-1" y="0" z="7" spawntime="60" />
@@ -47,11 +53,5 @@
 	</npc>
 	<npc centerx="32354" centery="32226" centerz="7" radius="1">
 		<npc name="Cassino" x="0" y="0" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="1071" centery="1028" centerz="7" radius="1">
-		<npc name="Battlemart" x="0" y="0" z="7" spawntime="60" />
-	</npc>
-	<npc centerx="1062" centery="1027" centerz="7" radius="1">
-		<npc name="The Lootmonger" x="0" y="0" z="7" spawntime="60" />
 	</npc>
 </npcs>

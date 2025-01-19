@@ -2,8 +2,8 @@ local internalNpcName = "Battlemart"
 local npcType = Game.createNpcType(internalNpcName)
 local npcConfig = {}
 
-npcConfig.name = internalNpcName
-npcConfig.description = internalNpcName
+npcConfig.name = "Toninho Refiler"
+npcConfig.description = "Toninho Refiler"
 
 npcConfig.health = 100
 npcConfig.maxHealth = npcConfig.health

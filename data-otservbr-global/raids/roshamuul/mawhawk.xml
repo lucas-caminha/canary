@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<!--Announcements-->
+	<announce delay="1000" type="Event" message="Danger, Mawhawk appeared!" />
+
+	<!--Single Spawns-->
+	<singlespawn delay="10000" name="Mawhawk" x="33711" y="32458" z="7"/>
+</raid>

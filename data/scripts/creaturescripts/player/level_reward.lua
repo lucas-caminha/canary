@@ -6,10 +6,19 @@ local table =
 	-- [level] = type = "coin", id = {QUANTITY, 0}, msg = "MESSAGE"},
 	-- [level] = type = "mount", id = {ID_MOUNT, 0}, msg = "MESSAGE"},
 
-	[20] = {type = "item", id = {2160, 2}, msg = "Receba 2 crystal coins por atingir o level 20!"},
-	[50] = {type = "bank", id = {30000, 0}, msg = "Depositamos 30000 gold coins em sua conta por atingir o level 50!"},
-	[100] = {type = "addon", id = {136, 128}, msg = "Receba o citizen addon completo por atingir o level 100!"},
+	[20] = {type = "item", id = {3043, 3}, msg = "Receba 3 crystal coins por atingir o level 20!"},
+	[50] = {type = "bank", id = {50000, 0}, msg = "Depositamos 50000 gold coins em sua conta por atingir o level 50!"},
+	[75] = {type = "bank", id = {100000, 0}, msg = "Depositamos 100000 gold coins em sua conta por atingir o level 75!"},
+	[100] = {type = "addon", id = {136, 128}, msg = "Receba o Citizen addon completo por atingir o level 100!"},
+	[125] = {type = "bank", id = {100000, 0}, msg = "Depositamos 100000 gold coins em sua conta por atingir o level 125!"},
 	[150] = {type = "mount", id = {170, 0}, msg = "Receba uma montaria por atingir o level 150!"},
+	[175] = {type = "bank", id = {100000, 0}, msg = "Depositamos 100000 gold coins em sua conta por atingir o level 175!"},
+        [200] = {type = "item", id = {36728, 2}, msg = "Receba 2 Bestiary betterment por atingir o level 200!"},
+        [250] = {type = "item", id = {22722, 1}, msg = "Receba 1 Tigrinho Token por atingir o level 250!"},
+        [300] = {type = "item", id = {36727, 2}, msg = "Receba 2 Wealth duplex por atingir o level 300!"},
+        [350] = {type = "mount", id = {1092, 0}, msg = "Receba uma montaria por atingir o level 350!"},
+        [400] = {type = "addon", id = {1777, 1776}, msg = "Receba o Beekeeper addon completo por atingir o level 400!"},
+        [500] = {type = "mount", id = {1778, 0}, msg = "Receba a montaria Bumblebee por atingir o level 500!"},
 }
 
 local storage = 15000

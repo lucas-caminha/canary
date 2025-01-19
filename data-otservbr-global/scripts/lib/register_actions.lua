@@ -985,7 +985,7 @@ function onUseSpikedSquelcher(player, item, fromPosition, target, toPosition, is
 		item:remove(1)
 
 		local rand = math.random(100)
-		if rand <= 10 then
+		if rand <= 25 then
 			toPosition:sendMagicEffect(CONST_ME_BLUE_FIREWORKS)
 			player:say("Success! Within the chest, you discover the fabled golem grench.", TALKTYPE_MONSTER_SAY)
 			player:addItem(16251, 1)
@@ -1021,12 +1021,8 @@ function onUseScythe(player, item, fromPosition, target, toPosition, isHotkey)
 		return true
 	-- The Secret Library Quest
 	elseif toPosition == Position(32177, 31925, 7) then
-		if player:getStorageValue(Storage.Quest.U11_80.TheSecretLibrary.LibraryPermission) == 7 then
-			player:teleportTo({ x = 32515, y = 32535, z = 12 })
-			player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
-		else
-			Position(32177, 31925, 7):sendMagicEffect(CONST_ME_POFF)
-		end
+		player:teleportTo({ x = 32515, y = 32535, z = 12 })
+		player:getPosition():sendMagicEffect(CONST_ME_TELEPORT)
 	else
 		return false
 	end

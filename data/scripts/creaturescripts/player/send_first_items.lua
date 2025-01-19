@@ -21,6 +21,7 @@ local config = {
 			{ 3003, 1 }, -- rope
 			{ 5710, 1 }, -- light shovel
 			{ 268, 10 }, -- mana potion
+			{3043, 1}, -- crystal coin
 		},
 	},
 
@@ -39,6 +40,7 @@ local config = {
 			{ 3003, 1 }, -- rope
 			{ 5710, 1 }, -- light shovel
 			{ 268, 10 }, -- mana potion
+			{3043, 1}, -- crystal coin
 		},
 	},
 
@@ -60,6 +62,7 @@ local config = {
 			{ 3350, 1 }, -- bow
 			{ 3447, 50 }, -- 50 arrows
                         { 35562, 1 }, -- quiver
+			{3043, 1}, -- crystal coin
 		},
 	},
 
@@ -80,6 +83,7 @@ local config = {
 			{ 3003, 1 }, -- rope
 			{ 5710, 1 }, -- light shovel
 			{ 266, 10 }, -- health potion
+			{3043, 1}, -- crystal coin
 		},
 	},
 }

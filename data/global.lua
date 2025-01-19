@@ -196,3 +196,13 @@ function addStamina(playerId, ...)
 	end
 	return false
 end
+
+function getBlessingsCost(level)
+    if level <= 30 then
+        return 2600
+    elseif level > 30 and level < 120 then
+        return 2600 + (level - 30) * 260
+    else 
+        return 26000 + (level - 120) * 100
+    end
+end
