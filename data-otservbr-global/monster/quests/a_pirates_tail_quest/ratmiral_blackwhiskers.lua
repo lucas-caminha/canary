@@ -76,7 +76,7 @@ monster.voices = {
 }
 
 monster.loot = {
-	{ id = 3043, chance = 100000, minCount = 1, maxCount = 3 }, -- crystal coin
+	{ id = 3043, chance = 100000, minCount = 5, maxCount = 7 }, -- crystal coin
 	{ id = 3035, chance = 55000, minCount = 1, maxCount = 39 }, -- platinum coin
 	{ id = 7642, chance = 40000, minCount = 1, maxCount = 19 }, -- great spirit potion
 	{ id = 7643, chance = 40000, minCount = 1, maxCount = 19 }, -- ultimate health potion
@@ -95,18 +95,18 @@ monster.loot = {
 	{ id = 35581, chance = 2680 }, -- golden cheese wedge
 	{ id = 35595, chance = 2680 }, -- soap
 	{ id = 35695, chance = 1790 }, -- scrubbing brush
-	{ id = 35614, chance = 890 }, -- cheesy membership card
-	{ id = 35523, chance = 890 }, -- exotic amulet
-	{ id = 35515, chance = 890 }, -- throwing axe
-	{ id = 35517, chance = 890 }, -- bast legs
-	{ id = 35516, chance = 890 }, -- exotic legs
-	{ id = 35518, chance = 890 }, -- jungle bow
-	{ id = 35524, chance = 890 }, -- jungle quiver
-	{ id = 35514, chance = 890 }, -- jungle flail
-	{ id = 35521, chance = 890 }, -- jungle rod
-	{ id = 35522, chance = 890 }, -- jungle wand
-	{ id = 35519, chance = 890 }, -- makeshift boots
-	{ id = 35520, chance = 890 }, -- make-do boots
+	{ id = 35614, chance = 1000 }, -- cheesy membership card
+	{ id = 35523, chance = 1000 }, -- exotic amulet
+	{ id = 35515, chance = 1000 }, -- throwing axe
+	{ id = 35517, chance = 1000 }, -- bast legs
+	{ id = 35516, chance = 1000 }, -- exotic legs
+	{ id = 35518, chance = 1000 }, -- jungle bow
+	{ id = 35524, chance = 1000 }, -- jungle quiver
+	{ id = 35514, chance = 1000 }, -- jungle flail
+	{ id = 35521, chance = 1000 }, -- jungle rod
+	{ id = 35522, chance = 1000 }, -- jungle wand
+	{ id = 35519, chance = 1000 }, -- makeshift boots
+	{ id = 35520, chance = 1000 }, -- make-do boots
 }
 
 monster.attacks = {
@@ -140,5 +140,11 @@ monster.immunities = {
 	{ type = "invisible", condition = true },
 	{ type = "bleed", condition = false },
 }
+
+mType.onAppear = function(monster, creature)
+    if monster:getType():isRewardBoss() then
+        monster:setReward(true)
+    end
+end
 
 mType:register(monster)

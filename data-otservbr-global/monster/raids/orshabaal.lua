@@ -22,7 +22,7 @@ monster.health = 22500
 monster.maxHealth = 22500
 monster.race = "fire"
 monster.corpse = 5995
-monster.speed = 270
+monster.speed = 200
 monster.manaCost = 0
 
 monster.changeTarget = {
@@ -166,5 +166,11 @@ monster.immunities = {
 	{ type = "invisible", condition = true },
 	{ type = "bleed", condition = false },
 }
+
+mType.onAppear = function(monster, creature)
+    if monster:getType():isRewardBoss() then
+        monster:setReward(true)
+    end
+end
 
 mType:register(monster)

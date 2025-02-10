@@ -43,6 +43,7 @@ local config = {
 				if baeloc then
 					baeloc:say("Oh, man! You always get the fun!")
 					if nictros then
+						baeloc:teleportTo(Position(33420, 31437, 13))
 						nictros:teleportTo(Position(33426, 31437, 13))
 						nictros:setMoveLocked(false)
 					end

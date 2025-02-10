@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<!--Announcements-->
+    <announce delay="10000" type="event" message="A strange force is taking advantage of the fair tides to attack Venore!" />   
+	<announce delay="50000" type="event" message="Run, Ratmiral Blackwhiskers and his gang are attacking the outskirts of Venore!" />
+	<!--Single Spawns-->
+	<singlespawn delay="50000" name="Ratmiral Blackwhiskers" x="32933" y="32017" z="6"/>
+
+	<!-- In Boat -->
+	<singlespawn delay="50000" name="Pirat Cutthroat" x="32930" y="32017" z="6"/>
+	<singlespawn delay="50000" name="Pirat Bombardier" x="32934" y="32017" z="6"/>
+	<singlespawn delay="50000" name="Pirat Scoundrel" x="32933" y="32015" z="6"/>
+	<singlespawn delay="50000" name="Pirat Scoundrel" x="32932" y="32023" z="6"/>
+
+	<!-- In Boat HIGH -->
+	<singlespawn delay="50000" name="Pirat Cutthroat" x="32932" y="32022" z="5"/>
+
+	<!-- OFF Boat -->
+	<singlespawn delay="50000" name="Pirat Cutthroat" x="32940" y="32031" z="6"/>
+	<singlespawn delay="50000" name="Pirat Bombardier" x="32949" y="32030" z="6"/>
+	<singlespawn delay="50000" name="Pirat Bombardier" x="32955" y="32033" z="6"/>
+
+	<singlespawn delay="50000" name="Pirat Bombardier" x="32921" y="32015" z="6"/>
+	<singlespawn delay="50000" name="Pirat Cutthroat" x="32913" y="32010" z="6"/>
+	<singlespawn delay="50000" name="Pirat Cutthroat" x="32914" y="32011" z="6"/>
+	<singlespawn delay="50000" name="Pirat Cutthroat" x="32911" y="32009" z="6"/>
+
+</raid>

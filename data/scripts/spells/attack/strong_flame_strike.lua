@@ -4,8 +4,8 @@ combat:setParameter(COMBAT_PARAM_EFFECT, CONST_ME_FIREATTACK)
 combat:setParameter(COMBAT_PARAM_DISTANCEEFFECT, CONST_ANI_FIRE)
 
 function onGetFormulaValues(player, level, maglevel)
-	local min = (level / 5) + (maglevel * 2.8) + 16
-	local max = (level / 5) + (maglevel * 4.4) + 28
+	local min = (level / 5) + (maglevel * 4.8) + 56
+	local max = (level / 5) + (maglevel * 6.4) + 88
 	return -min, -max
 end
 

@@ -86,7 +86,6 @@ monster.loot = {
 	{ name = "falcon battleaxe", chance = 200 },
 	{ name = "falcon longsword", chance = 200 },
 	{ name = "falcon mace", chance = 210 },
-	{ name = "falcon plate", chance = 100 },
 	{ name = "falcon shield", chance = 100 },
 }
 

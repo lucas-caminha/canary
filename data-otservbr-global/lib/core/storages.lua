@@ -3057,6 +3057,12 @@ GlobalStorage = {
 	IceCrack = 65016,
 	UglyMonster = 65017,
 	KeysUpdate = 40000, -- Reserved storage from 40000 - 40000
+
+	Podium = {
+		One = 70991,
+		Two = 70992,
+		Three = 70993
+	}
 }
 
 startupGlobalStorages = {

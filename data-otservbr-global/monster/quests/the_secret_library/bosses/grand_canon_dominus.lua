@@ -78,7 +78,6 @@ monster.loot = {
 	{ name = "patch of fine cloth", chance = 1000 },
 	{ id = 3039, chance = 1800 }, -- red gem
 	{ name = "violet gem", chance = 1850 },
-	{ name = "falcon bow", chance = 180 },
 	{ name = "falcon wand", chance = 180 },
 	{ name = "falcon plate", chance = 100 },
 }

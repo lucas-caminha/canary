@@ -93,10 +93,10 @@ monster.loot = {
 	{ name = "amber with a dragonfly", chance = 3920 },
 	{ name = "ghost claw", chance = 1960 },
 	{ name = "bloody tears", chance = 1500 },
-	{ name = "ghost chestplate", chance = 150 },
-	{ name = "spooky hood", chance = 150 },
-	{ name = "fabulous legs", chance = 150 },
-	{ name = "soulful legs", chance = 150 },
+	{ name = "ghost chestplate", chance = 250 },
+	{ name = "spooky hood", chance = 250 },
+	{ name = "fabulous legs", chance = 250 },
+	{ name = "soulful legs", chance = 250 },
 }
 
 monster.attacks = {
@@ -119,16 +119,16 @@ monster.defenses = {
 }
 
 monster.elements = {
-	{ type = COMBAT_PHYSICALDAMAGE, percent = 90 },
-	{ type = COMBAT_ENERGYDAMAGE, percent = 90 },
-	{ type = COMBAT_EARTHDAMAGE, percent = 90 },
-	{ type = COMBAT_FIREDAMAGE, percent = 90 },
-	{ type = COMBAT_LIFEDRAIN, percent = 90 },
-	{ type = COMBAT_MANADRAIN, percent = 90 },
-	{ type = COMBAT_DROWNDAMAGE, percent = 90 },
-	{ type = COMBAT_ICEDAMAGE, percent = 90 },
-	{ type = COMBAT_HOLYDAMAGE, percent = 90 },
-	{ type = COMBAT_DEATHDAMAGE, percent = 90 },
+	{ type = COMBAT_PHYSICALDAMAGE, percent = 0 },
+	{ type = COMBAT_ENERGYDAMAGE, percent = 0 },
+	{ type = COMBAT_EARTHDAMAGE, percent = 0 },
+	{ type = COMBAT_FIREDAMAGE, percent = 0 },
+	{ type = COMBAT_LIFEDRAIN, percent = 0 },
+	{ type = COMBAT_MANADRAIN, percent = 0 },
+	{ type = COMBAT_DROWNDAMAGE, percent = 0 },
+	{ type = COMBAT_ICEDAMAGE, percent = 0 },
+	{ type = COMBAT_HOLYDAMAGE, percent = 0 },
+	{ type = COMBAT_DEATHDAMAGE, percent = 0 },
 }
 
 monster.immunities = {

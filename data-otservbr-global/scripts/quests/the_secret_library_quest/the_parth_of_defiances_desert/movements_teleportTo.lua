@@ -137,7 +137,7 @@ function movements_desert_teleportTo.onStepIn(creature, item, position, fromPosi
 								if k.challenge then
 									player:say("You have to master the challenge first!", TALKTYPE_MONSTER_SAY)
 								end
-								player:teleportTo(fromPosition, true)
+								player:teleportTo(k.destination)
 							end
 						else
 							player:teleportTo(k.destination)

@@ -72,6 +72,7 @@ addTravelKeyword("liberty bay", 170, Position(32285, 32892, 6))
 addTravelKeyword("ankrahmun", 160, Position(33092, 32883, 6))
 addTravelKeyword("cormaya", 20, Position(33288, 31956, 6))
 addTravelKeyword("oramond", 200, Position(33479, 31985, 7))
+addTravelKeyword("gunther", 200, Position(33864, 32011, 5))
 
 -- Kick
 keywordHandler:addKeyword({ "kick" }, StdModule.kick, { npcHandler = npcHandler, destination = { Position(33174, 31773, 6), Position(33175, 31771, 6), Position(33177, 31772, 6) } })

@@ -15,7 +15,7 @@ function gazHaragothHeal.onThink(creature)
 			if not creature then
 				return
 			end
-			creature:addHealth(300000)
+			creature:addHealth(10000)
 			creature:getPosition():sendMagicEffect(CONST_ME_MAGIC_BLUE)
 			creature:say("Gaz'haragoth HEALS himself!", TALKTYPE_MONSTER_YELL)
 			return true

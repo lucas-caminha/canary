@@ -52,9 +52,6 @@ end
 
 -- Travel
 local function addTravelKeyword(keyword, text, destination, randomDestination, randomNumber, condition, ringCheck, ringRemove, helheimAccess)
-	if condition then
-		keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = "No, no, no, you even are no barb....barba...er.. one of us!!!! Talk to the Jarl first!" }, condition)
-	end
 	if helheimAccess then
 		keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = text }, helheimAccess)
 	end

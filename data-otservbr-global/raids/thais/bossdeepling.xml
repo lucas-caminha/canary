@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<raid>
+	<!--Announcements-->
+    <announce delay="10000" type="event" message="A strange force is shaking the waters of Thais city." />   
+	<announce delay="50000" type="event" message="Tanjis, Obujos and Jaul are invading from the right side of Thais, Danger!" />
+	<!--Single Spawns-->
+	<singlespawn delay="50000" name="Tanjis" x="32507" y="32219" z="7"/>
+	<singlespawn delay="75000" name="Obujos" x="32509" y="32206" z="6"/>
+    <singlespawn delay="125000" name="Jaul" x="32535" y="32221" z="8"/>
+</raid>

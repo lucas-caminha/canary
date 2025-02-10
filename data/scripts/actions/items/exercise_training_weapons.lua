@@ -81,7 +81,12 @@ local function exerciseTrainingEvent(playerId, tilePosition, weaponId, dummyId)
 	end
 
 	local weapon = player:getItemById(weaponId, true)
-	if not weapon:isItem() or not weapon:hasAttribute(ITEM_ATTRIBUTE_CHARGES) then
+    if not weapon then
+        player:sendTextMessage(MESSAGE_FAILURE, "Unable to find your training weapon... Leaving the training.")
+        leaveExerciseTraining(playerId)
+        return false
+    end
+	if (not weapon:isItem()) or (not weapon:hasAttribute(ITEM_ATTRIBUTE_CHARGES)) then
 		player:sendTextMessage(MESSAGE_FAILURE, "The selected item is not a training weapon, the training has stopped.")
 		leaveExerciseTraining(playerId)
 		return false
@@ -89,10 +94,24 @@ local function exerciseTrainingEvent(playerId, tilePosition, weaponId, dummyId)
 
 	local weaponCharges = weapon:getAttribute(ITEM_ATTRIBUTE_CHARGES)
 	if not weaponCharges or weaponCharges <= 0 then
-		weapon:remove(1) -- ??
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your training weapon has disappeared.")
-		leaveExerciseTraining(playerId)
-		return false
+		weapon:remove(1)
+        
+        weapon = player:getItemById(weaponId, true)
+        if weapon then
+            weaponCharges = weapon:getAttribute(ITEM_ATTRIBUTE_CHARGES)
+            
+            if not weaponCharges or weaponCharges <= 0 then
+                leaveExerciseTraining(playerId)
+                player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your training weapon has disappeared.")
+                return false
+            else
+                player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your training weapon has disappeared. Using the next one.")
+            end
+        else
+            leaveExerciseTraining(playerId)
+            player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your training weapon has disappeared.")
+            return false
+        end
 	end
 
 	if not dummies[dummyId] then
@@ -114,13 +133,6 @@ local function exerciseTrainingEvent(playerId, tilePosition, weaponId, dummyId)
 		playerPosition:sendDistanceEffect(tilePosition, exerciseWeaponsTable[weaponId].effect)
 	end
 
-	if weapon:getAttribute(ITEM_ATTRIBUTE_CHARGES) <= 0 then
-		weapon:remove(1)
-		player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "Your training weapon has disappeared.")
-		leaveExerciseTraining(playerId)
-		return false
-	end
-
 	local vocation = player:getVocation()
 	_G.OnExerciseTraining[playerId].event = addEvent(exerciseTrainingEvent, vocation:getBaseAttackSpeed() / configManager.getFloat(configKeys.RATE_EXERCISE_TRAINING_SPEED), playerId, tilePosition, weaponId, dummyId)
 	return true
@@ -133,19 +145,19 @@ end
 local exerciseTraining = Action()
 
 function exerciseTraining.onUse(player, item, fromPosition, target, toPosition, isHotkey)
-	if not target or type(target) ~= "userdata" or not target:isItem() then
+	if not target or type(target) == "table" or not target:getId() then
 		return true
 	end
-
+    
 	local playerId = player:getId()
 	local targetId = target:getId()
-
+    
 	if target:isItem() and isDummy(targetId) then
 		if _G.OnExerciseTraining[playerId] then
 			player:sendTextMessage(MESSAGE_FAILURE, "You are already training!")
 			return true
 		end
-
+        
 		local playerPos = player:getPosition()
 		if not exerciseWeaponsTable[item.itemid].allowFarUse and (playerPos:getDistance(target:getPosition()) > 1) then
 			player:sendTextMessage(MESSAGE_FAILURE, "Get closer to the dummy.")
@@ -156,7 +168,7 @@ function exerciseTraining.onUse(player, item, fromPosition, target, toPosition, 
 			player:sendTextMessage(MESSAGE_FAILURE, "You need to be in a protection zone.")
 			return true
 		end
-
+        
 		local playerHouse = player:getTile():getHouse()
 		local targetPos = target:getPosition()
 		local targetHouse = Tile(targetPos):getHouse()
@@ -192,7 +204,16 @@ function exerciseTraining.onUse(player, item, fromPosition, target, toPosition, 
 			player:setTraining(true)
 			player:setExhaustion("training-exhaustion", exhaustionTime)
 			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "You have started training on an exercise dummy.")
+			player:sendTextMessage(MESSAGE_EVENT_ADVANCE, "dummies: ", dummies)
 		end
+
+        local modal = ModalWindow {
+            title = "Auto Trainer!",
+            message = "Treino automatico ativo! Suas proximas exercise weapons serao usadas automaticamente se forem do mesmo tipo."
+        }
+    
+        modal:addButton('Confirm')
+        modal:sendToPlayer(player)
 		return true
 	end
 	return false

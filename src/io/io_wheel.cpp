@@ -270,7 +270,7 @@ void IOWheel::initializePaladinSpells() {
 
 	m_wheelBonusData.spells.paladin[1].name = "Strong Ethereal Spear";
 	m_wheelBonusData.spells.paladin[1].grade[1].decrease.cooldown = 2;
-	m_wheelBonusData.spells.paladin[1].grade[2].increase.damage = 380;
+	m_wheelBonusData.spells.paladin[1].grade[2].increase.damage = 38;
 
 	m_wheelBonusData.spells.paladin[2].name = "Divine Dazzle";
 	m_wheelBonusData.spells.paladin[2].grade[1].increase.aditionalTarget = 1;

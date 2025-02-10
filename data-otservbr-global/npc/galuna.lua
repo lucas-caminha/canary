@@ -71,6 +71,7 @@ npcConfig.shop = {
 	{ itemName = "quiver", clientId = 35562, buy = 400 },
 	{ itemName = "red quiver", clientId = 35849, buy = 400 },
 	{ itemName = "spear", clientId = 3277, buy = 10 },
+	{ itemName = "diamond arrow", clientId = 35901, buy = 130 },
 }
 -- On buy npc shop message
 npcType.onBuyItem = function(npc, player, itemId, subType, amount, ignore, inBackpacks, totalCost)

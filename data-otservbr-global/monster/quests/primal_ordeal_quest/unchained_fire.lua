@@ -13,11 +13,11 @@ monster.outfit = {
 	lookMount = 0,
 }
 
-monster.health = 30000
-monster.maxHealth = 30000
+monster.health = 10000
+monster.maxHealth = 10000
 monster.race = "fire"
 monster.corpse = 0
-monster.speed = 238
+monster.speed = 230
 monster.manaCost = 0
 
 monster.changeTarget = {

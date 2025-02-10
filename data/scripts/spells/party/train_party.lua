@@ -6,9 +6,9 @@ combat:setParameter(COMBAT_PARAM_AGGRESSIVE, 0)
 local condition = Condition(CONDITION_ATTRIBUTES)
 condition:setParameter(CONDITION_PARAM_SUBID, 1)
 condition:setParameter(CONDITION_PARAM_BUFF_SPELL, 1)
-condition:setParameter(CONDITION_PARAM_TICKS, 2 * 60 * 1000)
-condition:setParameter(CONDITION_PARAM_SKILL_MELEE, 3)
-condition:setParameter(CONDITION_PARAM_SKILL_DISTANCE, 3)
+condition:setParameter(CONDITION_PARAM_TICKS, 1 * 60 * 10000)
+condition:setParameter(CONDITION_PARAM_SKILL_MELEE, 5)
+condition:setParameter(CONDITION_PARAM_SKILL_DISTANCE, 5)
 
 local baseMana = 60
 

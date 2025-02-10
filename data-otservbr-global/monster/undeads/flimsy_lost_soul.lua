@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Flimsy Lost Soul")
 local monster = {}
 
 monster.description = "a flimsy lost soul"
-monster.experience = 4500
+monster.experience = 5000
 monster.outfit = {
 	lookType = 1268,
 	lookHead = 0,
@@ -84,8 +84,8 @@ monster.loot = {
 	{ name = "necklace of the deep", chance = 1760 },
 	{ name = "cursed bone", chance = 1570 },
 	{ name = "wand of starstorm", chance = 1520 },
-	{ name = "glacial rod", chance = 960 },
-	{ name = "wand of voodoo", chance = 330 },
+	{ name = "glacial rod", chance = 1520 },
+	{ name = "wand of voodoo", chance = 1520 },
 }
 
 monster.attacks = {

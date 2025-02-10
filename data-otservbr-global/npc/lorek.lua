@@ -53,7 +53,7 @@ end
 -- Travel
 local function addTravelKeyword(keyword, text, cost, destination, condition)
 	local travelKeyword = keywordHandler:addKeyword({ keyword }, StdModule.say, { npcHandler = npcHandler, text = "Do you seek a passage to " .. (text or keyword:titleCase()) .. " for |TRAVELCOST|?", cost = cost }, condition and function(player)
-		return player:getPawAndFurRank() >= 3
+		return true
 	end or nil)
 	travelKeyword:addChildKeyword({ "yes" }, StdModule.travel, { npcHandler = npcHandler, premium = false, cost = cost, destination = destination })
 	travelKeyword:addChildKeyword({ "no" }, StdModule.say, { npcHandler = npcHandler, text = "Maybe another time.", reset = true })

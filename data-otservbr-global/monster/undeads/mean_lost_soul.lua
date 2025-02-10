@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Mean Lost Soul")
 local monster = {}
 
 monster.description = "a mean lost soul"
-monster.experience = 5580
+monster.experience = 6080
 monster.outfit = {
 	lookType = 1268,
 	lookHead = 0,
@@ -82,9 +82,9 @@ monster.loot = {
 	{ name = "fire axe", chance = 1400 },
 	{ name = "ivory comb", chance = 1200 },
 	{ name = "mercenary sword", chance = 1050 },
-	{ name = "haunted blade", chance = 960 },
-	{ name = "warrior's axe", chance = 730 },
-	{ name = "twiceslicer", chance = 310 },
+	{ name = "haunted blade", chance = 1560 },
+	{ name = "warrior's axe", chance = 930 },
+	{ name = "twiceslicer", chance = 710 },
 }
 
 monster.attacks = {

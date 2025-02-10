@@ -18,8 +18,8 @@ monster.bosstiary = {
 	bossRace = RARITY_ARCHFOE,
 }
 
-monster.health = 60000
-monster.maxHealth = 60000
+monster.health = 50000
+monster.maxHealth = 50000
 monster.race = "blood"
 monster.corpse = 28625
 monster.speed = 115
@@ -27,7 +27,6 @@ monster.manaCost = 0
 
 monster.events = {
 	"killingLibrary",
-	"oberonImmune",
 }
 
 monster.changeTarget = {
@@ -74,18 +73,18 @@ monster.loot = {
 	{ name = "brass shield", chance = 30000, maxCount = 1 },
 	{ name = "spatial warp almanac", chance = 25000, maxCount = 1 },
 	{ name = "viking helmet", chance = 23000, maxCount = 1 },
-	{ name = "falcon battleaxe", chance = 500, maxCount = 1 },
-	{ name = "falcon longsword", chance = 500, maxCount = 1 },
-	{ name = "falcon mace", chance = 500, maxCount = 1 },
-	{ name = "grant of arms", chance = 500, maxCount = 1 },
-	{ name = "falcon bow", chance = 350, maxCount = 1 },
-	{ name = "falcon circlet", chance = 350, maxCount = 1 },
-	{ name = "falcon coif", chance = 350, maxCount = 1 },
-	{ name = "falcon rod", chance = 350, maxCount = 1 },
-	{ name = "falcon wand", chance = 350, maxCount = 1 },
-	{ name = "falcon shield", chance = 200, maxCount = 1 },
-	{ name = "falcon greaves", chance = 200, maxCount = 1 },
-	{ name = "falcon plate", chance = 200, maxCount = 1 },
+	{ name = "falcon battleaxe", chance = 600, maxCount = 1 },
+	{ name = "falcon longsword", chance = 600, maxCount = 1 },
+	{ name = "falcon mace", chance = 600, maxCount = 1 },
+	{ name = "grant of arms", chance = 600, maxCount = 1 },
+	{ name = "falcon bow", chance = 450, maxCount = 1 },
+	{ name = "falcon circlet", chance = 450, maxCount = 1 },
+	{ name = "falcon coif", chance = 450, maxCount = 1 },
+	{ name = "falcon rod", chance = 450, maxCount = 1 },
+	{ name = "falcon wand", chance = 450, maxCount = 1 },
+	{ name = "falcon shield", chance = 300, maxCount = 1 },
+	{ name = "falcon greaves", chance = 300, maxCount = 1 },
+	{ name = "falcon plate", chance = 300, maxCount = 1 },
 }
 
 monster.attacks = {
@@ -123,7 +122,7 @@ monster.immunities = {
 }
 
 mType.onThink = function(monster, interval)
-	if monster:getStorageValue(GrandMasterOberonConfig.Storage.Life) <= GrandMasterOberonConfig.AmountLife then
+	if monster:getStorageValue(GrandMasterOberonConfig.Storage.Life) < GrandMasterOberonConfig.AmountLife then
 		local percentageHealth = (monster:getHealth() * 100) / monster:getMaxHealth()
 		if percentageHealth <= 20 then
 			SendOberonAsking(monster)

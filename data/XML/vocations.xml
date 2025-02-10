@@ -63,7 +63,7 @@
 	<vocation id="5" clientid="13" baseid="1" name="Master Sorcerer" description="a master sorcerer" magicshield="1" gaincap="10" gainhp="5" gainmana="30" gainhpticks="12000" gainhpamount="1" gainmanaticks="2000" gainmanaamount="2" manamultiplier="1.1" attackspeed="2000" basespeed="110" soulmax="200" gainsoulticks="15000" fromvoc="1" avatarlooktype="1595">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
 		<mitigation multiplier="1.26" primaryShield="2.0" secondaryShield="1.2" />
-		<pvp damageReceivedMultiplier="1.0" damageDealtMultiplier ="1.0"/>
+		<pvp damageReceivedMultiplier="1.0" damageDealtMultiplier ="1.2"/>
 		<skill id="0" multiplier="1.5" />
 		<skill id="1" multiplier="2.0" />
 		<skill id="2" multiplier="2.0" />
@@ -78,7 +78,7 @@
 	<vocation id="6" clientid="14" baseid="2" name="Elder Druid" description="an elder druid" magicshield="1" gaincap="10" gainhp="5" gainmana="30" gainhpticks="12000" gainhpamount="1" gainmanaticks="2000" gainmanaamount="2" manamultiplier="1.1" attackspeed="2000" basespeed="110" soulmax="200" gainsoulticks="15000" fromvoc="2" avatarlooktype="1596">
 		<formula meleeDamage="1.0" distDamage="1.0" defense="1.0" armor="1.0" />
 		<mitigation multiplier="1.26" primaryShield="2.0" secondaryShield="1.2" />
-		<pvp damageReceivedMultiplier="1.0" damageDealtMultiplier ="1.0"/>
+		<pvp damageReceivedMultiplier="1.0" damageDealtMultiplier ="1.2"/>
 		<skill id="0" multiplier="1.5" />
 		<skill id="1" multiplier="1.8" />
 		<skill id="2" multiplier="1.8" />

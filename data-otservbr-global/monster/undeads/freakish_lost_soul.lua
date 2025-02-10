@@ -2,7 +2,7 @@ local mType = Game.createMonsterType("Freakish Lost Soul")
 local monster = {}
 
 monster.description = "a freakish lost soul"
-monster.experience = 7020
+monster.experience = 7520
 monster.outfit = {
 	lookType = 1268,
 	lookHead = 0,
@@ -80,9 +80,9 @@ monster.loot = {
 	{ name = "gemmed figurine", chance = 3800 },
 	{ name = "ensouled essence", chance = 2720 },
 	{ id = 23529, chance = 1220 }, -- ring of blue plasma
-	{ name = "silver hand mirror", chance = 1090 },
-	{ name = "ornate crossbow", chance = 1090 },
-	{ name = "crystal crossbow", chance = 270 },
+	{ name = "silver hand mirror", chance = 1490 },
+	{ name = "ornate crossbow", chance = 1490 },
+	{ name = "crystal crossbow", chance = 870 },
 }
 
 monster.attacks = {
